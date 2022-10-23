@@ -16,6 +16,8 @@ while True:
     break
     
 """
+I was trying to wrap input of name into a function, but I couldnt figure out why it was not working, so I re-write it as seen above
+
 def get_name(name):
     while True:
         try:
@@ -30,12 +32,6 @@ name = get_name("Enter the name")
 
 """
 
-
-#name = input("Enter the name of a person: ")
-#if not name.isalpha():
-#    print ("ERROR. Please, enter the name using alpha")
-#    
-#    exit()
 
 def get_correct_rate(hourly_rate):
     while True:
@@ -68,6 +64,8 @@ hours = get_correct_hours("How many working hours per week?")
 
 #Here is all math
 """
+I was trying to represent all calculation as a function, but it didnt work properly, and it was taking much time to figure out the way
+
 def payroll_calculator(hours, hourly_rate):
     while True:
         try:
@@ -101,8 +99,6 @@ def overtime_count(hours):
             return overtime
 
 overtime = overtime_count (hours)
-#print (overtime)
-
 regular_pay = (hours - overtime) * hourly_rate
 ot_pay = overtime * hourly_rate * 1.5
 gross_pay = regular_pay + ot_pay
@@ -114,6 +110,8 @@ net_pay = gross_pay - fed_tax - state_tax - fica
 
 
 #Here is our output
+#I was thinking to represent the output as a function of printing the dictionary, but as we are adding some text before the value, 
+#I came to think  - simple output will be more easy to implement 
 #payroll_dict = {name: [hourly_rate, hours, regular_pay, ot_pay, gross_pay, 
 #fed_tax, state_tax, fica, net_pay]}
 print ("Here is the employee's payroll information:\n")
