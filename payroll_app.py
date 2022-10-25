@@ -88,8 +88,8 @@ put_markdown('# **Results**')
 put_html('<br><br>')
 put_html('<hr>')
 put_table([
-                ['Your Name', 'Hourly rate', 'Working hours', 'Overtime pay', 'Gross Pay', 'Net Pay'],
-                [name, hourly_rate, hours, ot_pay, gross_pay, net_pay],
+                'Your Name', 'Hourly rate, $', 'Working hours', 'Regular pay, $', 'Overtime pay', 'Gross Pay', 'Fed tax', 'State tax', 'FICA', 'Net Pay'],
+                [name, hourly_rate, hours, regular_pay, ot_pay, gross_pay, fed_tax, state_tax, fica, net_pay],
             ])
 
 if __name__=="__main__":
